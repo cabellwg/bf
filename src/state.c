@@ -12,6 +12,14 @@ State* init_state() {
 
 
 /**
+ * Gets the value at the current position.
+ */
+char current_value(State* state) {
+	return state->tape[state->position];
+}
+
+
+/**
  * Destroys a State object.
  */
 void destroy_state(State** state) {

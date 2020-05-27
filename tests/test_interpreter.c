@@ -5,8 +5,8 @@
 #include <string.h>
 
 
-#include "test_language.h"
-#include "../src/language.c"
+#include "test_interpreter.h"
+#include "../src/interpreter.c"
 
 
 #define ANSI_COLOR_RESET "\x1b[0m"
@@ -40,7 +40,7 @@ static Test tests[NUM_TESTS] = {
 
 // Functions
 
-void language_all() {
+void interpreter_all() {
     for (int i = 0; i < NUM_TESTS; i++) {
         set_up();
         printf("Running test %d ... ", i + 1);

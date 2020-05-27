@@ -33,6 +33,18 @@ State* init_state(void);
 
 
 /**
+ * Gets the value of the current position of the state.
+ *
+ * Parameters:
+ *  - `State* state`: The state to read the value from.
+ *
+ * Returns:
+ * The char value of the current tape position.
+ */
+char current_state(State* state);
+
+
+/**
  * Destroys a memory tape state and the memory tape.
  *
  * Parameters:
