@@ -24,7 +24,8 @@ int read_action_char(State* state, char c);
 int interpret(FILE* input) {
 	State* state = init_state();
 
-	while(char c = fgetc(input) != EOF) {
+	char c = '\0';
+	while((c = fgetc(input)) != EOF) {
 		if (c == '[' && current_value(state) == '\0') {
 			int nest_level = 1;
 			while (nest_level != 0) {
@@ -62,6 +63,8 @@ int interpret(FILE* input) {
 	}
 
 	destroy_state(&state);
+
+	return 0;
 }
 
 

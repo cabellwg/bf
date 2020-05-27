@@ -17,7 +17,7 @@
  */
 typedef struct State {
 	char tape[TAPE_LENGTH];
-	char* position;
+	int position;
 } State;
 
 
@@ -41,7 +41,7 @@ State* init_state(void);
  * Returns:
  * The char value of the current tape position.
  */
-char current_state(State* state);
+char current_value(State* state);
 
 
 /**

@@ -16,6 +16,6 @@
  *  - 1 if there was an unknown error
  *  - 2 if there were mismatched '[' and ']' delimiters
  */
-void interpret(FILE* input);
+int interpret(FILE* input);
 
 #endif /* interpreter_h */
