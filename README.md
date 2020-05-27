@@ -20,9 +20,9 @@ $ cp build/bf /usr/local/bin/bf
 Ensure that `/usr/local/bin` is in your path and run:
 
 ```
-git clone https://github.com/cabellwg/bf.git
-make build cc=clang
-cp build/bf /usr/local/bin/bf
+$ git clone https://github.com/cabellwg/bf.git
+$ make build cc=clang
+$ cp build/bf /usr/local/bin/bf
 ```
 
 ###### Windows
@@ -32,7 +32,7 @@ Set up a Linux virtual machine (distro of your choice) and set it to automatical
 ### Usage
 
 ```
-bf bf_src.bf
+$ bf bf_src.bf
 ```
 
 Run `bf --help` to view a list of available flags.
