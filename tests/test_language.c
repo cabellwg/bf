@@ -8,6 +8,9 @@
 #include "test_language.h"
 #include "../src/language.c"
 
+
+#define ANSI_COLOR_RESET "\x1b[0m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
 #define NUM_TESTS 0
 
 
@@ -42,7 +45,7 @@ void language_all() {
         set_up();
         printf("Running test %d ... ", i + 1);
         tests[i]();
-        printf("passed.\n");  // Tests should halt execution of test suite on failure
+        printf(ANSI_COLOR_GREEN "passed" ANSI_COLOR_RESET ".\n");
         tear_down();
     }
 }

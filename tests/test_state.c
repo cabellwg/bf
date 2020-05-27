@@ -8,6 +8,9 @@
 #include "test_state.h"
 #include "../src/state.c"
 
+
+#define ANSI_COLOR_RESET "\x1b[0m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
 #define NUM_TESTS 1
 
 
@@ -44,8 +47,8 @@ void state_all() {
         set_up();
         printf("Running test %d ... ", i + 1);
         tests[i]();
-        printf("passed.\n");  // Tests should halt execution of test suite on failure
-        tear_down();
+        printf(ANSI_COLOR_GREEN "passed" ANSI_COLOR_RESET ".\n");
+	tear_down();
     }
 }
 
