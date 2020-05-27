@@ -1,5 +1,6 @@
 # `bfc`
 [![License information](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/cabellwg/elizabeth-cabell-fine-art-api/blob/master/LICENSE)
+[![Build Status](https://travis-ci.com/cabellwg/bfc.svg?token=LKSsVQYJaBXGxfgSBjEE&branch=master)](https://travis-ci.com/cabellwg/bfc)
 
 `bfc` is a simple Brainfuck compiler written in C.
 
