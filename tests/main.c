@@ -1,17 +1,12 @@
 #include <stdio.h>
-#include "test_state.h"
 #include "test_interpreter.h"
 
-#define ANSI_COLOR_RESET   "\x1b[0m"
-#define ANSI_COLOR_GREEN   "\x1b[32m"
+#define ANSI_COLOR_RESET "\x1b[0m"
+#define ANSI_COLOR_GREEN "\x1b[32m"
 
 int main(int argc, char** argv) {
-	printf("Testing bfc:\n");
+	printf("Testing bf:\n");
 	printf("----------------------------------\n");
-
-	printf("Testing state module:\n");
-	state_all();
-	printf("\n");
 
 	printf("Testing interpreter module:\n");
 	interpreter_all();
