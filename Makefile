@@ -9,10 +9,11 @@ endif
 
 build:
 	-mkdir build
-	$(CC) -o build/bfc -std=c11 src/*.c $(CCFLAGS)
+	$(CC) -o build/bf -std=c11 src/*.c $(CCFLAGS)
 
 test:
-	$(CC) -o build/bfc_tests -std=c11 -ggdb3 tests/*.c $(CCFLAGS)
-	./build/bfc_tests
+	-mkdir build
+	$(CC) -o build/bf_tests -std=c11 -ggdb3 tests/*.c $(CCFLAGS)
+	./build/bf_tests
 
-.PHONY: test
+.PHONY: build test
