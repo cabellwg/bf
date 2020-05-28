@@ -2,7 +2,7 @@
 [![License information](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/cabellwg/bf/blob/master/LICENSE)
 [![Build Status](https://travis-ci.com/cabellwg/bfc.svg?branch=master)](https://travis-ci.com/cabellwg/bfc)
 
-`bf` is a simple Brainfuck interpreter written in C.
+`bf` is the friendly Brainfuck interpreter! :)
 
 ### Installation
 
