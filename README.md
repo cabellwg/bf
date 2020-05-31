@@ -1,6 +1,6 @@
 # `bf`
 [![License information](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/cabellwg/bf/blob/master/LICENSE)
-[![Build Status](https://travis-ci.com/cabellwg/bfc.svg?branch=master)](https://travis-ci.com/cabellwg/bfc)
+[![Build Status](https://travis-ci.com/cabellwg/bf.svg?branch=master)](https://travis-ci.com/cabellwg/bf)
 
 `bf` is the friendly Brainfuck interpreter! :)
 
